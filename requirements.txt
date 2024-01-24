@@ -3,8 +3,9 @@ numpy
 pandas
 
 # packaging
-setuptools>=41.4.0
-wheel>=0.33.6
+setuptools>=65.5.1
+wheel>=0.38.0
 
 # historical data
 tushare
+numpy>=1.21.0rc1 # not directly required, pinned by Snyk to avoid a vulnerability
