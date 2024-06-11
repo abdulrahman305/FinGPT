@@ -1,3 +1,7 @@
+<div align="center">
+<img align="center" width="30%" alt="image" src="https://github.com/AI4Finance-Foundation/FinGPT/assets/31713746/e0371951-1ce1-488e-aa25-0992dafcc139">
+</div>
+
 # FinGPT: Open-Source Financial Large Language Models
 [![Downloads](https://static.pepy.tech/badge/fingpt)](https://pepy.tech/project/fingpt)
 [![Downloads](https://static.pepy.tech/badge/fingpt/week)](https://pepy.tech/project/fingpt)
@@ -85,8 +89,8 @@ For detailed and more customized implementation, please refer to [FinGPT-Forecas
   
     **Cost per GPU hour.** For **A100 GPUs**, the AWS p4d.24xlarge instance, equipped with 8 A100 GPUs is used as a benchmark to estimate the costs. Note that BloombergGPT also used p4d.24xlarge As of July 11, 2023, the hourly rate for this instance stands at $32.773. Consequently, the estimated cost per GPU hour comes to $32.77 divided by 8, resulting in approximately **$4.10**. With this value as the reference unit price (1 GPU hour). **BloombergGPT estimated cost= 512 x 53 x 24 = 651,264 GPU hours x $4.10 = $2,670,182.40**. For **RTX 3090**, we assume its cost per hour is approximately **$1.0**, which is actually much higher than available GPUs from platforms like vast.ai.
   
-  * Reproduce the results by running [benchmarks](./fingpt/FinGPT_v3/benchmark/benchmarks.ipynb), and the detailed tutorial is on the way.
-  * Finetune your own FinGPT v3 model with the LoRA method on only an RTX 3090 with this [notebook](./fingpt/FinGPT_v3/training_8bit/train_Llama2_13B.ipynb) in 8bit or this [notebook](./fingpt/FinGPT_v3/training_int4/train.ipynb) in int4 (QLoRA)
+  * Reproduce the results by running [benchmarks](./fingpt/FinGPT_Sentiment_Analysis_v3/benchmark/benchmarks.ipynb), and the detailed tutorial is on the way.
+  * Finetune your own FinGPT v3 model with the LoRA method on only an RTX 3090 with this [notebook](./fingpt/FinGPT_Sentiment_Analysis_v3/training_8bit/train_Llama2_13B.ipynb) in 8bit or this [notebook](./fingpt/FinGPT_Sentiment_Analysis_v3/training_int4/train.ipynb) in int4 (QLoRA)
   
 * [FinGPT V1](./fingpt)
   + **FinGPT by finetuning ChatGLM2 / Llama2 with LoRA with the market-labeled data for the Chinese Market**
@@ -159,7 +163,7 @@ The datasets we used, and the **multi-task financial LLM** models are available 
 * FinGPT Framework: Open-Source Financial Large Language Models
 
 <div align="center">
-<img align="center" src=figs/FinGPT_framework_20231003.png>
+<img align="center" src=figs/FinGPT_framework_20240301.png>
 </div>
 
 * [FinGPT-RAG](https://github.com/AI4Finance-Foundation/FinGPT/tree/master/fingpt/FinGPT_RAG): We present a retrieval-augmented large language model framework specifically designed for financial sentiment analysis, optimizing information depth and context through external knowledge retrieval, thereby ensuring nuanced predictions.
