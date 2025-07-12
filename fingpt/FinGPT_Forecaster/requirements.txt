@@ -6,3 +6,4 @@ yfinance
 finnhub-python
 nvidia-ml-py3
 requests>=2.32.0 # not directly required, pinned by Snyk to avoid a vulnerability
+protobuf>=4.25.8 # not directly required, pinned by Snyk to avoid a vulnerability
